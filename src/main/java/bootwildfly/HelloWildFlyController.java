@@ -13,7 +13,7 @@ public class HelloWildFlyController {
         Map<String, String> env = System.getenv();
         if (env.containsKey("HOSTNAME")){
             String host = env.get("HOSTNAME");
-            System.out.println(host);
+            //System.out.println(host);
         }
         String name = "oli";
         return ("Hello, SpringBoot on Wildfly" + name + ": " + env.get("HOSTNAME"));
