@@ -16,6 +16,6 @@ public class HelloWildFlyController {
             System.out.println(host);
         }
         String name = "oli";
-        return ("Hello, SpringBoot on Wildfly" + name + ": " + host);
+        return ("Hello, SpringBoot on Wildfly" + name + ": " + env.get("HOSTNAME"));
     }
 }
